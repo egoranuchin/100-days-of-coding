@@ -11,6 +11,8 @@ turtle.shape(image)
 
 data = pandas.read_csv("50_states.csv")
 
+
+while
 answer_state = screen.textinput(title="Guess the State", prompt="What's another state's name?")
 print(answer_state)
 
@@ -25,8 +27,8 @@ if titled_answer_state in all_states:
     t.hideturtle()
     t.pu()
     state_data = data[data.state == titled_answer_state]
-    t.goto(state_data.x, state_data.y)
-    t.write(f"{titled_answer_state}", False, align="center", font=('Arial', 8, 'normal'))
+    t.goto(int(state_data.x), int(state_data.y))
+    t.write(state_data.state.item())
     # name = writing.Writing(state.state, state.x, state.y)
 
 
