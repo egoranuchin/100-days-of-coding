@@ -23,6 +23,14 @@ while len(guessed_states) < 50:
         #If they got it right:
             #Create a turtle to write the name of the state at the state's x and y coordinate
 
+    if answer_state == "Exit":
+        missing_states = []
+        for state in all_states:
+            if state not in guessed_states:
+                missing_states.append(state)
+        data = pandas.DataFrame(missing_states)
+        data.to_csv("states_to_learn.csv")
+        break
     if answer_state in all_states:
         guessed_states.append(answer_state)
         t = turtle.Turtle()
@@ -34,6 +42,8 @@ while len(guessed_states) < 50:
         # name = writing.Writing(state.state, state.x, state.y)
 
 
+
+# states_to_learn.csv
 
 # def get_mouse_click_coor(x, y):
 #     print(x, y)
