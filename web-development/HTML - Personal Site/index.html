@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <meta description="Egor Anuchin CV 2023">
         <title>Personal Site</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
+
     <body>
+
         <table cellspacing="20">
             <tr>
-                <td><img src="IMG_3858.png" alt="egor anuchin profile pic"></td>
+                <td><img class="circular" src="IMG_3858.png" alt="egor anuchin profile pic"></td>
                 <td><h1>Egor Anuchin</h1>
                     <p><em><a href="https://en.wikipedia.org/wiki/Technical_writer">Technical Writer</a></em></p>
-                    <p>I write documents for software development maintenance. I like playing tennis, computer games and reading.</p></td>
+                    <p>I write documents for software development. I like playing tennis, computer games and learning new things.</p></td>
             </tr>
         </table>
+
         <hr>
+
         <h3>Work Experience</h3>
-        <table border="1" cellspacing="20">
+
+        <table class="info-table">
             <thead>
                 <tr>
                     <th>Where</th>
@@ -25,21 +32,40 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>DataArt<br> since December 2022</td>
-                    <td>Communication maintenance between software development teams.</td>
+                    <td >DataArt<br> since December 2022</td>
+                    <td>Communication maintenance between<br>software development teams.</td>
                 </tr>
                 <tr>
                     <td>VK Cloud<br>Oct 2021 till Nov 2022</td>
                     <td>Maintaining user manuals web portal.</td>
                 </tr>
+                <tr>
+                    <td>
+                        SoftSwiss<br>Jan 2021 till Oct 2021
+                    </td>
+                    <td>
+                        Updating customer documentation, publishing release notes.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Veeam <br> Sep 2017 till Sep 2019
+                    </td>
+                    <td>
+                        Writing user manuals and API references.
+                    </td>
+                </tr>
             </tbody>
         </table>
+        
         <hr>
+        
         <h3>Skills</h3>
-        <table border="1" cellspacing="20">
+        
+        <table id="skills-table" class="info-table">
             <tr>
                 <td>
-                    <table>
+                    <table cellspacing="10">
                     <tr>
                         <td>Writing user manuals</td>
                         <td>⭐️⭐️⭐️⭐️⭐️</td>
@@ -51,7 +77,7 @@
                     </table>
                 </td>
                 <td>
-                    <table>
+                    <table cellspacing="10">
                     <tr>
                         <td>Project Management</td>
                         <td>⭐️⭐️⭐️⭐️</td>
@@ -64,9 +90,15 @@
                 </td>
             </tr>
         </table>
+        
         <hr>
+        
         <a href="work.html">Work Experience</a>
+        
         <br>
+        
         <a href="contact.html">Contact me</a>
+
     </body>
+    
 </html>
